@@ -1,0 +1,131 @@
+body {
+    background: url(../others/img/grassland.jpg);
+    background-size: cover;
+}
+
+.logo {
+    display: block;
+    margin: auto;
+    width: 50px;
+    height: 50px;
+}
+
+.container {
+    background: url(../others/img/background.jpg);
+    background-size: contain;
+    max-width: 550px;
+    border: none;
+    box-shadow: 0px 0px 5px 0px #b4b2b2;
+    border-radius: 20px;
+    margin: auto;
+    height: 70vh;
+    overflow-y: scroll;
+    margin-bottom: 10px;
+    padding: 10px;
+}
+
+::-webkit-scrollbar {
+    width: 5px;
+    display: block;
+}
+::-webkit-scrollbar-button {
+    display: none;
+}
+::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.18);
+    border-radius: 10px;
+    border: none;
+    visibility: hidden;
+}
+:hover::-webkit-scrollbar-thumb {
+    visibility: visible;
+}
+
+.message {
+    max-width: 200px;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    background: lightgrey;
+    padding: 8px 14px 8px 14px;
+    margin: 17px 12px;
+    border-radius: 18px;
+}
+
+.left {
+    background: #e4e4e4;
+    float: left;
+    clear: both;
+}
+
+.right {
+    color: white;
+    background: #0a8482;
+    float: right;
+    clear: both;
+}
+
+.join,
+.leave {
+    color: black;
+    float: none;
+    clear: both;
+    margin: 12px auto;
+    width: fit-content;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    font-size: 15px;
+    background: #ffffff;
+    box-shadow: 0px 0px 6px 1px #afacac;
+    border-radius: 30px;
+    border: none;
+}
+
+#send-container {
+    display: flex;
+    width: 600px;
+    flex-direction: row;
+    margin-left: 27.4vw;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+#messageInp {
+    height: 25px;
+    width: 500px;
+    border-radius: 50px;
+    border: none;
+    font-size: 15px;
+    padding: 4px 14px;
+    box-shadow: 0px 0px 6px 0px #aba6a6;
+    font-family: "Roboto", sans-serif;
+}
+
+#messageInp:focus {
+    outline: none;
+}
+
+.btn {
+    cursor: pointer;
+    border: none;
+    border-radius: 30px;
+    padding: 6px 8px 4px 10px;
+    width: 37px;
+    font-size: 14px;
+    color: aliceblue;
+    background: #0a8482;
+    font-family: "Roboto", sans-serif;
+    height: 35px;
+}
+
+.btn:focus-visible {
+    background: #0f9896;
+    outline: none;
+}
+
+.btn img {
+    width: 18px;
+    filter: invert(1);
+    height: 18px;
+    padding: 0;
+    margin: 0;
+}
